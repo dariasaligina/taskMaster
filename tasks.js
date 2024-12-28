@@ -15,9 +15,11 @@ for (let i = 0; i < allTasks.length; i += 1) {
         .getElementById("to_do")
         .appendChild(event.currentTarget.parentElement);
     }
+    localStorage.setItem("info", document.getElementById("content").innerHTML);
   });
   allTasks[i].lastChild.addEventListener("click", function (event) {
     event.currentTarget.parentElement.remove();
+    localStorage.setItem("info", document.getElementById("content").innerHTML);
   });
 }
 
