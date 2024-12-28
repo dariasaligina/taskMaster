@@ -1,0 +1,89 @@
+body {
+  background-color: #01d9db;
+}
+
+#full {
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 10px;
+}
+h1 {
+  color: #006b6d;
+}
+
+input[type="text"] {
+  width: 92.5%;
+  border-radius: 5px;
+  color: #006b6d;
+
+  border: #006b6d solid 2px;
+}
+
+input[type="text"]:focus {
+  outline: none; /* Remove default outline */
+  border-color: #006b6d; /* Retain your border color */
+  background-color: white; /* Optional: To change the background when focused */
+}
+input[type="text"]::placeholder {
+  color: #006b6d98;
+}
+
+button {
+  border-radius: 5px;
+  border: #006b6d solid 2px;
+  background-color: white;
+  color: #006b6d;
+  float: right;
+}
+
+button:hover {
+  background-color: #006b6d;
+  color: white;
+}
+
+#taskform {
+  margin: auto;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  width: 100%;
+}
+.tasks:hover {
+  background-color: #006b6d35;
+}
+
+.tasks button {
+  visibility: hidden;
+}
+
+.tasks:hover button {
+  visibility: visible;
+}
+
+.tasks label {
+  width: 85%;
+
+  margin-right: 10px;
+  color: #006b6d;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#content {
+  margin-top: 10px;
+}
+
+#completed label {
+  text-decoration: line-through;
+  color: #006b6d98;
+}
